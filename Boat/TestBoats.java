@@ -7,11 +7,13 @@ public class TestBoats extends SailBoat{
 
 		b2.setLength(32);
 		b1.move();
-		b3.move();
+		b3.move(); 
 		b2.move();
+		b3.setLength(67);
 
 		System.out.println(b1.hashCode());//hashCode is a method in the Object superclass
 		System.out.println(b2.getClass());// ''
 		System.out.println(b3.toString());// ''
+		System.out.prinln(b3.hashCode());
 	}
 }
