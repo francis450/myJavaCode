@@ -1,4 +1,4 @@
-public class Example1{
+public class Example1{ 
 	public int amountOfYork;
 
 	public int setYork(){
