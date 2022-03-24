@@ -8,7 +8,7 @@ abstract public class Animal{
 	public abstract void eat();
 	
 	public void walk(){
-		System.out.println("I am Walking on "+limbs+"'s");
+		System.out.println("I am  Walking on "+limbs+"'s");
 	}
 
 	public void setLimbs(int legs){
