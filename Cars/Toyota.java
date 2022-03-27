@@ -1,6 +1,6 @@
-public class Toyota{
+public class Toyota extends SaloonCar{
 	public static void main(String args[]){
-		SaloonCar obj = new SaloonCar(Toyota);
+		SaloonCar obj = new SaloonCar("Toyota");
 
 		System.out.println("Value of wheels is : "+obj.wheels);
 		
