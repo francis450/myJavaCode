@@ -15,6 +15,9 @@ public class PhraseMatic{
 		int rand2 = (int) (Math.random() * size2);
 		int rand3 = (int) (Math.random() * size3);
 
-		
+		//creating a phrase
+		String phrase = words1[rand1] +" "+ words2[rand2]+" "+words3[rand3];
+
+		System.out.println("What we need is a"+phrase);
 	}
 }
