@@ -11,13 +11,13 @@ public class PhraseMatic{
 		int size3 = words3.length;
 
 		//generating three random numbers using the array sizes
-		int rand1 = (int) (Math.random() * size1);
+		int rand1 = (int) (Math.random() * size1);//(int) -> Its called a cast.used to force the type into integer
 		int rand2 = (int) (Math.random() * size2);
 		int rand3 = (int) (Math.random() * size3);
 
 		//creating a phrase
 		String phrase = words1[rand1] +" "+ words2[rand2]+" "+words3[rand3];
 
-		System.out.println("What we need is a"+phrase);
+		System.out.println("What we need is a "+phrase);
 	}
 }
