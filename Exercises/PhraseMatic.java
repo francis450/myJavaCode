@@ -9,6 +9,12 @@ public class PhraseMatic{
 		int size1 = words1.length;
 		int size2 = words2.length;
 		int size3 = words3.length;
+
+		//generating three random numbers using the array sizes
+		int rand1 = (int) (Math.random() * size1);
+		int rand2 = (int) (Math.random() * size2);
+		int rand3 = (int) (Math.random() * size3);
+
 		
 	}
 }
