@@ -1,17 +1,28 @@
-public class SimpleDotCom{
+class SimpleDotCom{
 	private int [] locationCells;
-	private int numOfHits;
-
-	public String checkYourself(String userGuess){
-		//CONVERT the user guess into an int
-		int guess = Integer.parseInt(userGuess);
-
+	private int numOfHits = 0;
+	
+	public void setLocation(int [] loc){
+		locationCells = loc;
 	}
 
-	void setLocation(int [] loc){
-		for(int i=0;i<locationCells;i++){
-			locationCells[i] = loc[i];
+	public String checkYourself(String stringGuess){
+		int guess = Integer.parseInt(stringGuess);
+		String result ="miss";
+
+		for(int cell : locationCells){
+			if(guess  == cell){
+				result = "hit";
+				numOfHits++;
+				//Since we already got a hit there is no need to test the other classes
+				break;
+			}
 		}
-	}
+		if(numOfHits  == locationCells.length){
+			result = "kill";
+		}
 
+		System.out.println(result);
+		return result; 
+	}
 }
